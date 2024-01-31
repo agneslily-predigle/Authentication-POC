@@ -1,0 +1,14 @@
+<div class="header-component">
+        <h1>Authify</h1>
+        <div class="header-items"*ngIf="isAuthenticated">
+                <a [routerLink]="['/admin']" mat-raised-button>Admin</a>
+                <a [routerLink]="['/user']" mat-raised-button>User</a>
+                <a [routerLink]="['/tester']" mat-raised-button>Tester</a>
+                <a [routerLink]="['/profile']" mat-raised-button>Profile</a>
+                <a [routerLink]="['/signout']" mat-raised-button>Signout</a>
+        </div>
+        <div class="header-items" *ngIf="!isAuthenticated">
+                <a [routerLink]="['/signin']" mat-raised-button>Signin</a>
+                <a [routerLink]="['/signup']" mat-raised-button>Signup</a>
+        </div>
+</div>

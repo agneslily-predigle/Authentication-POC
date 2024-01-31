@@ -1,0 +1,13 @@
+.header-component{
+        background-color: navy;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+        color: aliceblue;
+        .header-items{
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+        }
+}

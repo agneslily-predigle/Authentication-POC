@@ -1,0 +1,9 @@
+<div class="container">
+        <h1>Profile</h1>
+        <ng-container *ngIf="userEmail$ | async as userEmail">
+        <h3>Email: {{ userEmail }}</h3>
+        </ng-container>
+        <ng-container *ngIf="userId$ | async as userId">
+                <h3>Uid: {{ userId }}</h3>
+        </ng-container>
+</div>

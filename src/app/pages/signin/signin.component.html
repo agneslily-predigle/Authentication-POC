@@ -1,0 +1,21 @@
+<div class="container">
+        <h2>Signin Form</h2>
+        <form class="form-component" [formGroup]="userObj">
+                <mat-form-field class="form_field" appearance="outline">
+                          <mat-label>Email</mat-label>
+                          <input type="email" matInput name="email" formControlName="email" required/>
+                          <mat-error *ngIf="userObj.get('email')?.invalid && (userObj.get('email')?.dirty || userObj.get('email')?.touched)">
+                                  <small>Email is required</small>
+                                </mat-error>                                      
+                        </mat-form-field>
+                        
+                        <mat-form-field class="form_field" appearance="outline">
+                          <mat-label>Password</mat-label>
+                          <input type="password" matInput name="password" formControlName="password" required />
+                          <mat-error *ngIf="userObj.get('password')?.invalid && (userObj.get('password')?.dirty || userObj.get('password')?.touched)">
+                                  <small *ngIf="userObj.get('password')?.errors?.['required']">Password is required</small>
+                        </mat-error>
+                        </mat-form-field>
+                  <button color="accent" mat-raised-button type="button" (click)="onSubmit()">SignIn</button>
+          </form>
+</div>

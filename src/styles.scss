@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather&display=swap');
+*{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: 'Merriweather', serif;
+}
+body{
+        width:100vw;
+        height: 100vh;
+}
+.container{
+        display: flex;
+        justify-content: center;
+        height: 80vh;
+        align-items: center;
+        flex-direction: column;
+}
