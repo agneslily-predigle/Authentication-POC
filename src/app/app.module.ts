@@ -16,7 +16,6 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { SignoutComponent } from './pages/signout/signout.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { HomeComponent } from './pages/home/home.component'
-import { AngularFireDatabaseModule } from '@angular/fire/compat/database'
 import { AuthService } from './services/auth.service';
 import { AdminComponent } from './Component/admin/admin.component';
 import { UserComponent } from './Component/user/user.component';
@@ -44,7 +43,6 @@ import { TesterComponent } from './Component/tester/tester.component';
         BrowserAnimationsModule,
         AngularFireModule.initializeApp(enviroment.firebase),
         AngularFireAuthModule,
-        AngularFireDatabaseModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
